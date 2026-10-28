@@ -1,0 +1,22 @@
+{
+  "gates": [
+    {
+      "name": "JSONPlaceholder user contract",
+      "url": "https://jsonplaceholder.typicode.com/users/1",
+      "method": "GET",
+      "expectStatus": 200,
+      "maxLatencyMs": 1500,
+      "timeoutMs": 5000,
+      "requireHeaders": {
+        "content-type": "application/json"
+      },
+      "requireJsonPaths": [
+        "id",
+        "name",
+        "email",
+        "address.city",
+        "company.name"
+      ]
+    }
+  ]
+}

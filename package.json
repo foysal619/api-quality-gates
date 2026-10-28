@@ -1,0 +1,13 @@
+{
+  "name": "api-quality-gates",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A dependency-free API quality gate for status, latency, headers, and JSON shape.",
+  "bin": { "api-quality-gate": "bin/api-quality-gate.js" },
+  "scripts": {
+    "test": "node --test --test-isolation=none",
+    "check": "node bin/api-quality-gate.js examples/public-api.gates.json"
+  },
+  "engines": { "node": ">=20" }
+}
